@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style-flex2.css">
+	<title>FlexBox</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		.head {
+			background: #dcdcdc;
+			height: 10vh;
+		}
+
+		.head > img {
+			padding-left: 15px;
+			height: 70px;
+			width: 150px;
+		}
+
+		header, footer {
+			display: flex;
+			align-items: center;
+			background: red;
+			height: 5vh;
+		}
+
+		header > a {
+			color: floralwhite;
+			text-decoration: none;
+		}
+
+		.main {
+			flex: 1;
+			display: flex;
+		}
+
+		.main > nav {
+			background: gray;
+			order:  3;
+		}
+
+		.main > aside {
+			background: chocolate;
+			order: 2;
+		}
+
+		.main > article {
+			background: wheat;
+			flex: 1;
+		}
+
+		.main > nav, 
+		.main > aside {
+			flex: 0 10vw;
+		}
+
+		.inhere {
+			padding: 7px;
+			background-color: floralwhite;
+			color: black;
+		}
+
+		header > a {
+			padding-right: 20px;
+		}
+
+		footer {
+			color: floralwhite;
+		}
+
+		header, footer, article, aside, nav {
+			padding: 1em;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="head">
+		<img src="smktelkomjkt.png">
+	</div>
+	<Header>
+		<a href="#">Home</a>
+		<a href="#">DashBoard</a>
+		<a href="#" class="inhere">About Me</a>
+	</Header>
+	<div class="main">
+		<nav>Nav</nav>
+		<aside>Aside</aside>
+		<article>Article</article>
+	</div>
+	<footer></footer>
+</body>
+</html>

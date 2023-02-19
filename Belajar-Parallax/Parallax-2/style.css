@@ -1,0 +1,135 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body {
+    height: 600vh;
+}
+.box {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-image: url(images/bg.jpg);
+}
+
+.belakangparallax {
+    position: absolute;
+    left: 12%;
+}
+.logoparallax {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    height: 100px;
+    width: 100%;
+}
+.depanparallax {
+    width: 430px;
+    height: 683px;
+    position: absolute;
+    right: 9%;
+    bottom: -75%;
+    overflow: hidden;
+    z-index: 3;
+}
+.konten {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    z-index: 10;
+}
+.isi {
+    margin: auto;
+    width: 70%;
+    height: 250px;
+    text-align: center;
+}
+.isi > h1 {
+    margin: 100px auto 30px auto;
+    font-size: 4em;
+}
+.isi > hr {
+    margin: auto;
+    width: 800px;
+    color: gray;
+}
+.isi > P {
+    margin: 30px auto;
+    color: gray;
+    font-size: x-large;
+}
+.clothes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44%;
+    margin: 60px auto;
+    height: 685px;
+}
+.clothes-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    height: 30%;
+}
+figure {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+figure > img {
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+figure:hover .img-hover {
+    transform: scale(1.2);
+}
+figure:hover figcaption {
+    left: 0;
+}
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    /* right: 0; */
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.3s ease-in-out;
+}
+
+.is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.large-window {
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    margin-top: 150px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    border-radius: 50% 50% 50% 50%;
+}
+.img-1 {
+    background-image: url(images/model1.jpg);
+}
+.img-2 {
+    background-image: url(images/model2.jpg);
+}
+.img-3 {
+    background-image: url(images/model3.jpg);
+}

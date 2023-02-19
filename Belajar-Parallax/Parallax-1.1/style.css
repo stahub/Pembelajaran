@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 300vh;
+    
+    background: aqua;
+}
+.kepala {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.parallax-bg1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -40vh;
+    background-color: goldenrod;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg2 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -45vh;
+    background-color: blueviolet;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg3 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -50vh;
+    background-color: gold;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg4 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -55vh;
+    background-color: royalblue;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg5 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -60vh;
+    background-color: hotpink;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg6 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -65vh;
+    background-color: tomato;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg7 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -70vh;
+    background-color: palegreen;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg8 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -75vh;
+    background-color: khaki;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg9 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -80vh;
+    background-color: lemonchiffon;
+    box-shadow: 3px 0px 0px 0px;
+}
+.parallax-bg10 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -85vh;
+    background-color: aqua;
+    box-shadow: 3px 0px 0px 0px;
+}
+

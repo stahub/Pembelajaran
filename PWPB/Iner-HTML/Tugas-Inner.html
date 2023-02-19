@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Inner HTML</title>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="inih1"></div>
+    <div id="inip"><p></p></div>
+</body>
+<script>
+    document.getElementById("container").innerHTML = "<p>Hello World</p>";
+    document.getElementById("inih1").innerHTML = "<h1>Judul</h1>";
+    var ininewh1 = document.getElementById("inih1");
+    ininewh1.innerHTML = "<h1>Judul Baru</h1>";
+    document.getElementById("inip").innerHTML = "<p>Ini adalah paragraf</p>";
+    var hapusp = document.getElementById("inip");
+    hapusp.innerHTML = "";
+</script>
+</html>

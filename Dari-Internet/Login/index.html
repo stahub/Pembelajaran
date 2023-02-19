@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!-- Coding By Royal 420 KE | youtube.com/royal420KE -->
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Login & Registration Form | Royal420KE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- For fontawesome icons -->
+
+    <link rel="stylesheet" href="CSS/all.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form signup">
+
+            <h2>Signup</h2>
+
+            <div class="inputBox">
+
+                <input type="text" required="required">
+
+                <i class="fas fa-user"></i>
+
+                <span>Username</span>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="email" required="required">
+
+                <i class="fas fa-envelope"></i>
+
+                <span>Email Address</span>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="password" required="required">
+
+                <i class="fas fa-lock"></i>
+
+                <span>Password</span>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="password" required="required">
+
+                <i class="fas fa-lock"></i>
+
+                <span>Confirm Password</span>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="submit" value="Create an Account">
+
+            </div>
+
+            <p>Already have an account ? <a href="#"
+
+                class="login">Login</a></p>
+
+        </div>
+
+        <div class="form signin">
+
+            <h2>Signin</h2>
+
+            <div class="inputBox">
+
+                <input type="text" required="required">
+
+                <i class="fas fa-user"></i>
+
+                <span>Username</span>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="password" required="required">
+
+                <i class="fas fa-lock"></i>
+
+                <span>Password</span>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="submit" value="Login">
+
+            </div>
+
+            <p>Already Registered ? <a href="#"
+
+                class="create">Create an account</a></p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let login = document.querySelector('.login');
+
+        let create = document.querySelector('.create');
+
+        let container = document.querySelector('.container');
+
+
+
+        login.onclick = function(){
+
+            container.classList.add('signinForm');
+
+        }
+
+        create.onclick = function(){
+
+            container.classList.remove('signinForm');
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan</title>
+</head>
+<body>
+    <script>
+        //Percabangan 1 block
+        var jwb = prompt("Masukkan jumlah harga belanja anda!");
+
+        if(jwb > 100000)
+            document.write("Selamat anda mendapatkan diskon!<br>");
+
+            document.write("Terimakasih sudah berbelanja :)");
+
+        //Percabangan 2 block
+        var pwd = prompt("Masukkan Password Anda");
+
+        if (pwd == "admin123") {
+            document.write("Selamat Datang!");
+        }else{
+            document.write("Password yand anda masukkan SALAH!");
+        }
+        //Percabangan lebih dari 2 block
+        var nilai = prompt("Masukkan nilai anda");
+
+        if (nilai >= 90) document.write("Nilai anda A!");
+        else if(nilai >= 80) document.write("NIlai adna B!");
+        else if(nilai >= 70) document.write("Nilai anda C!");
+        else document.write("Nilai anda D!");
+
+        //switch case
+        var nilai=prompt("Masukkan angka dari 1-3 untuk menampilkan menu");
+        var menu="";
+
+        switch (nilai) {
+            case '1':                
+            menu="Nasi goreng";
+                break;
+            case '2':
+            menu="Mie godok";
+                break;
+            case '3':
+            menu="Nasi rebus";
+                break;
+            default:
+                menu= "Inputan salah woi! kan ditawarinnya 1-3 doang!!!";
+                break;
+            }
+            document.write(menu);
+        //Ternery
+        var jwb=prompt("Apakah anda sudah berumur di atas 18 tahun? (Jawab IYA atau TIDAK)")
+            var umur=(jwb.toUpperCase() == 'IYA') ? "Selamat Datang" : "Silahkan pergi";
+
+            document.write(umur)
+        
+        //Nested
+        var jwb=prompt("Masukkan username anda :")
+            
+            if (jwb == "admin"){
+                var Password=prompt("Masukkan password anda :");
+                if (Password=="admin123"){
+                    document.write(`selamat datang ${jwb}`);
+                } else {
+                    document.write("Pass salah woi");
+                }
+            } else {
+                document.write("Username Salah woi")
+            }
+    </script>
+</body>
+</html>

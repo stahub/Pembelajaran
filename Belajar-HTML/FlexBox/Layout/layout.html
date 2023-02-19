@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FlexBox</title>
+				Flex Direction
+                flex-direction: row;
+                flex-direction: row-reverse;
+                flex-direction: column;
+                flex-direction : column-reverse;
+
+                Flex Wrap
+                flex-wrap: wrap;
+                flex-wrap : nowrap;
+                flex-wrap : wrap-reverse;
+
+                Justify Content
+                justify-content: flex-start;
+                justify-content: flex-end;
+                justify-content: center;
+                justify-content: space-evenly;
+                justify-content: space-around;
+	<style>
+		*, .html, .body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+		}
+		.box1, .box2, .box3 {
+			width: 250px;
+			height: 250px;
+		}
+		.box1 {
+			background-color: lightslategray;
+		}
+		.box2 {
+			background-color: darkslategray;
+		}
+		.box3 {
+			background-color: silver;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">Box 1 Flex Directon</div>
+		<div class="box2">Box 2 Flex Reverse</div>
+		<div class="box3">Box 3 Flex Wrap</div>
+	</div>
+
+</body>
+</html>

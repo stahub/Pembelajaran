@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+			font-family: monospace;
+			font-size: 108%;
+		}
+		body {
+			background: #52525b;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+        table {
+            border-collapse: collapse;
+            width: 50%;	
+			height: 70vh;
+        }
+        td, th {
+            text-align: center  ;
+			border: 2px solid white;
+            color: white;
+		}
+		#judul {
+			background: #71717a;
+		}
+    </style>
+</head>
+<body>
+    <script>
+        var nama = prompt("Masukkan Nama:")
+    
+        var bindo = prompt("Masukkan Nilai Bahasa Indonesia:");
+        var gradei = " ";
+    
+        if (bindo >= 90 ) gradei = "A";
+            else if (bindo >= 80) gradei = "B";
+            else if (bindo >= 70) gradei = "C"; 
+            else if (bindo >= 60) gradei = "D";
+            else gradei = "E"; 
+    
+        var bing = prompt("Masukkan Nilai Bahasa Inggris:");
+        var gradee = " ";
+    
+        if (bing >= 90 ) gradee = "A";
+            else if (bing >= 80) gradee = "B";
+            else if (bing >= 70) gradee = "C"; 
+            else if (bing >= 60) gradee = "D";
+            else gradee = "E"; 
+    
+        
+    
+        var mtk = prompt("Masukkan Nilai Matematika:");
+        var gradem = " ";
+    
+        if (mtk >= 90) gradem = "A";
+            else if (mtk >= 80) gradem = "B";
+            else if (mtk >= 70) gradem = "C"; 
+            else if (mtk >= 60) gradem = "D";
+            else gradem = "E"; 
+    
+            
+    
+       </script> 
+    <div class="container">
+        <table border="1">
+            <tr>
+                <th colspan="4">Daftar Nilai <script>document.write(nama)</script>.</th>
+            </tr>
+            <tr>
+              <td> No </td>
+              <td> Mata Pelajaran </td>
+              <td> Nilai </td>
+              <td> Indeks </td>
+            </tr>
+            <tr>
+              <td> 1 </td>
+              <td> Bahasa Indonesia </td>
+              <td><script> document.write(`${bindo}`)</script></td>
+              <td><script>document.write(`${gradei}`);</script></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bahasa Inggris</td>
+                <td><script>document.write(`${bing}`)</script></td>
+                <td><script>document.write(`${gradee}`);</script></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Matematika</td>
+                <td><script>document.write(`${mtk}`)</script></td>
+                <td><script>document.write(`${gradem}`);</script></td>
+              </tr>
+          </table>
+    </div>
+</body>
+</html>

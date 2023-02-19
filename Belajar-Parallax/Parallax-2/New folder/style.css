@@ -1,0 +1,75 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body {
+    height: 600vh;
+}
+.box {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+}
+.bgparallax {
+    position: fixed;
+    width: 100%;
+    height: 620px;
+    background-size: auto 600px;
+    background-position: top center;
+    overflow: hidden; 
+}
+
+.belakangparallax {
+    position: absolute;
+    left: 15%;
+}
+.logoparallax {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    height: 100px;
+    width: 100%;
+}
+.depanparallax {
+    width: 430px;
+    height: 683px;
+    position: absolute;
+    right: 10%;
+    bottom: -80%;
+    overflow: hidden;
+    z-index: 3;
+}
+.konten {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    z-index: 10;
+}
+.isi {
+    margin: auto;
+    width: 70%;
+    height: 300px;
+    text-align: center;
+}
+.isi > h1 {
+    margin: 40px auto;
+    font-size: 6em;
+}
+.isi > hr {
+    margin: auto;
+    width: 800px;
+    color: gray;
+}
+.isi > P {
+    margin: 40px auto;
+    color: gray;
+    font-size: xx-large;
+}
+.clothes-pics {
+    width: 60%;
+    margin: auto;
+    height: 600px;
+    background-color: aqua;
+}

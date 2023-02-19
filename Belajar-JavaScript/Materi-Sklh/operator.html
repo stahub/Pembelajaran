@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator JS</title>
+</head>
+<body>
+    <script>
+
+        //Operator Aritmatika
+        var a = 20;
+        var b = 2;
+        var c = 0;
+
+        c = a + b;
+        document.write(`${a} + ${b} = ${c}<br>`);
+
+        //Operator Penugasan
+        var score = 100;
+        document.write(`score = ${score}<br>`);
+
+        score += 5;
+        document.write(`score += ${score}<br>`);
+
+        score -= 2;
+        document.write(`score -= ${score}<br>`);
+
+        score *= 2;
+        document.write(`score *= ${score}<br>`);
+
+        score /= 4;
+        document.write(`score /= ${score}<br>`);
+
+        score **= 2;
+        document.write(`score **= ${score}<br>`);
+
+        score %= 3;
+        document.write(`score %= ${score}<br>`)
+
+        var a = 20;
+        var b = 19;
+
+        var benar = a > b;
+        var salah = a < b;
+
+        var hasil = benar && salah;
+        document.write(`${benar} && ${salah} = ${hasil}<br>`);
+
+        var hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br>`);
+
+        var hasil = !benar;
+        document.write(`!${benar} = ${hasil}`);
+
+        //Operator Ternary  
+        var conf = confirm("apakah anda berumur di atas 18 tahun?");
+     
+     var hasil = conf ? "selamat datang" : "silahkan pergi";
+     document.write(hasil);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#konten {
+    margin: 20px auto;
+    width: 300px;
+    font-family: Helvetica;
+    font-size: 0.8em;
+}
+#konten form fieldset label, #konten form fieldset input  {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+}
+#konten form fieldset legend {
+    padding: 5px;
+    background-color: #DBEAF9;
+    font-weight: bold;
+}
+#konten form fieldset {
+    background-color: #ECF4FC;
+    border: 1px solid #DBEAF9;
+}
+#konten form fieldset input[type=submit] {
+    width: 30% !important;
+    margin-top: 20px;
+}

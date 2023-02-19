@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        *{
+			font-family: monospace;
+			font-size: 108%;
+		}
+		body {
+			background: #52525b;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+        table {
+            border-collapse: collapse;
+            width: 50%;	
+			height: 70vh;
+        }
+        td, th {
+			border: 2px solid white;
+            color: white;
+		}
+		#judul {
+			background: #71717a;
+		}
+    </style>
+	<div class="container">
+		<table cellpadding="8">
+			<tr id="judul">
+				<th>Nama Mobil</th>
+				<th>Merk</th>
+				<th>Tahun Rilis</th>
+				<th>Jenis Bensin</th>
+			</tr>
+			<tr id="data_mobil_1"></tr>
+			<tr id="data_mobil_2"></tr>
+			<tr id="data_mobil_3"></tr>
+			<tr id="data_mobil_4"></tr>
+			<tr id="data_mobil_5"></tr>
+			<tr id="data_mobil_6"></tr>
+			<tr id="data_mobil_7"></tr>
+			<tr id="data_mobil_8"></tr>
+			<tr id="data_mobil_9"></tr>
+			<tr id="data_mobil_10"></tr>
+		</table>
+	</div>
+    <script>
+		var Gasoline = "Gasoline";
+        const data_mobil_1 = ["jazz", "Honda", "2002", Gasoline];
+        const data_mobil_2 = ["Yaris", "Toyota", "2005", Gasoline];
+        const data_mobil_3 = ["Swift", "Suzuki", "2010", Gasoline];
+        const data_mobil_4 = ["Wagon R", "Suzuki", "2003", Gasoline];
+        const data_mobil_5 = ["Brio", "Honda", "2012", Gasoline];
+        const data_mobil_6 = ["Baleno", "Suzuki", "2015", Gasoline];
+        const data_mobil_7 = ["Mirage", "Mitsubishi", "2013", Gasoline];
+        const data_mobil_8 = ["i20", "Hyundai", "2008", Gasoline];
+        const data_mobil_9 = ["Picanto", "Kia", "2011", Gasoline];
+        const data_mobil_10 = ["Ecosport", "Ford", "2014", Gasoline];
+
+        let data_1 = "";
+            for (let i = 0; i < data_mobil_1.length; i++) {
+            data_1 += "<td>" + data_mobil_1[i] + "</td>";
+        }
+		let data_2 = "";
+            for (let i = 0; i < data_mobil_2.length; i++) {
+            data_2 += "<td>" + data_mobil_2[i] + "</td>";
+        }
+		let data_3 = "";
+            for (let i = 0; i < data_mobil_3.length; i++) {
+            data_3 += "<td>" + data_mobil_3[i] + "</td>";
+        }
+		let data_4 = "";
+            for (let i = 0; i < data_mobil_4.length; i++) {
+            data_4 += "<td>" + data_mobil_4[i] + "</td>";
+        }
+		let data_5 = "";
+            for (let i = 0; i < data_mobil_5.length; i++) {
+            data_5 += "<td>" + data_mobil_5[i] + "</td>";
+        }
+		let data_6 = "";
+            for (let i = 0; i < data_mobil_6.length; i++) {
+            data_6 += "<td>" + data_mobil_6[i] + "</td>";
+        }
+		let data_7 = "";
+            for (let i = 0; i < data_mobil_7.length; i++) {
+            data_7 += "<td>" + data_mobil_7[i] + "</td>";
+        }
+		let data_8 = "";
+            for (let i = 0; i < data_mobil_8.length; i++) {
+            data_8 += "<td>" + data_mobil_8[i] + "</td>";
+        }
+		let data_9 = "";
+            for (let i = 0; i < data_mobil_9.length; i++) {
+            data_9 += "<td>" + data_mobil_9[i] + "</td>";
+        }
+		let data_10 = "";
+            for (let i = 0; i < data_mobil_10.length; i++) {
+            data_10 += "<td>" + data_mobil_10[i] + "</td>";
+        }
+        document.getElementById("data_mobil_1").innerHTML = data_1;
+        document.getElementById("data_mobil_2").innerHTML = data_2;
+        document.getElementById("data_mobil_3").innerHTML = data_3;
+        document.getElementById("data_mobil_4").innerHTML = data_4;
+        document.getElementById("data_mobil_5").innerHTML = data_5;
+        document.getElementById("data_mobil_6").innerHTML = data_6;
+        document.getElementById("data_mobil_7").innerHTML = data_7;
+        document.getElementById("data_mobil_8").innerHTML = data_8;
+        document.getElementById("data_mobil_9").innerHTML = data_9;
+        document.getElementById("data_mobil_10").innerHTML = data_10;
+    </script>
+
+</body>
+</html>

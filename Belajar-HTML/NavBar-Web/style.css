@@ -1,0 +1,78 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.fcontainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-color: lightgray;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+	padding: 5px;
+	width: 100vw;
+	height: 60px;
+	background-color: #222;
+	box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.brand {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	padding-left: 10px;
+	text-transform: capitalize;
+}
+
+.firstname {
+	 color: floralwhite;
+	 font-weight: 700;
+}
+
+.lastname {
+	color: yellow;
+	padding-left: 6px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.navigation > li { 
+	list-style-type: none;
+	padding: 10px;
+}
+
+.navigation > li > a {
+	color: whitesmoke;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.navigation > li > a:hover {
+	color: yellow;
+	transition: all .3s ease-in-out;
+}
+
+.navigation > li > img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.navigation > li > img:hover {
+	width: 65px;
+	height: 65px;
+	border-radius: 65px;
+	transition: all .4s ease-in-out;
+}
